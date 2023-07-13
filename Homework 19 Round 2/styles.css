@@ -1,0 +1,452 @@
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  grid-template-columns: 10 fr;
+  grid-template-rows: 20 fr;
+  display: grid;
+ gap: 2rem;
+}
+
+
+body {
+  background-color: #082B59;
+  margin: 1;
+  padding: 1;
+  font-family: 'Lato', sans-serif;
+  line-height: 2.5;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+/* make images flexible */
+img {
+  max-width: 100%;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  border-bottom: 10px solid #d98555;
+}
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 250px;
+  align-items: center;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  align-items: center;
+  
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #d98555;
+}
+/* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+article {
+  flex-basis: 100%;
+}
+figure {
+  margin: 2rem 0 0 0;
+  flex-basis: 100%;
+  border-radius: 10px;
+  float: right;
+}
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding:  0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 1rem 1rem 3rem 1rem;
+}
+    
+.ExtraText {
+  margin: 1rem;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+
+.container {
+  grid-template-columns: 10 fr;
+  grid-template-rows: 20 fr;
+  display: grid;
+ gap: 2rem;
+}
+
+
+body {
+  background-color: #082B59;
+  margin: 1;
+  padding: 1;
+  font-family: 'Lato', sans-serif;
+  line-height: 2.5;
+  font-size: 1.1rem;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  text-align: left;
+  grid-column-start: 3;
+  
+}
+/* make images flexible */
+img {
+  max-width: 100%;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  border-bottom: 10px solid #d98555;
+}
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 250px;
+  align-items: center;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  align-items: center;
+  
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #d98555;
+}
+/* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+article {
+  flex-basis: 60%;
+  text-align: left;
+  grid-column: 1/5;
+}
+
+
+
+figure {
+  margin: 2rem 1rem 1rem 1rem;
+  flex-basis: 40%;
+  border-radius: 10px;
+  text-align: right;
+  margin-top: 11rem;
+  grid-column: 6/10;
+}
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 280px;
+  height: 450px;
+  object-fit: cover;  
+
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding:  0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 1rem 1rem 3rem 1rem;
+}
+    
+.ExtraText {
+  margin: 1rem;
+}
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+  .container {
+    grid-template-columns: 10 fr;
+    grid-template-rows: 20 fr;
+    display: grid;
+   gap: 2.2rem;
+  }
+  
+
+  body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+  font-size: 1.26rem;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+/* make images flexible */
+img {
+  max-width: 100%;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  border-bottom: 10px solid #d98555;
+}
+/* navbar styling */
+nav ul {
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.5rem;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 200px;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  text-align: left;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
+/* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+article {
+  flex-basis: 53%;
+  text-align: left;
+  grid-column: 1/5;
+  grid-row: 6/12;
+}
+figure {
+  margin: 0 0 0 0;
+  flex-basis: 47%;
+  border-radius: 10px;
+  text-align: right;
+margin-top: 9.5rem;
+grid-column: 5/10;
+grid-row: 6/11;
+}
+
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+.ExtraText {
+
+  font-size: 1.1rem;
+
+}
+    
+}
